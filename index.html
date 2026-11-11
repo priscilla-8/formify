@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formify | Student Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>FORMIFY<span>.</span></h2>
+        <p>Student Registration Portal</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2>Student Registration</h2>
+            <p>Fill in your details to register.</p>
+
+            <form>
+                <label>Full Name</label>
+                <input type="text" placeholder="Enter your full name" required>
+
+                <label>Email Address</label>
+                <input type="email" placeholder="Enter your email" required>
+
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Enter your phone number">
+
+                <label>Date of Birth</label>
+                <input type="date">
+
+                <label>Gender</label>
+                <div class="options">
+                    <label><input type="radio" name="gender"> Male</label>
+                    <label><input type="radio" name="gender"> Female</label>
+                </div>
+
+                <label>Department</label>
+                <select required>
+                    <option value="">Select Department</option>
+                    <option>Economics</option>
+                    <option>Computer Science</option>
+                    <option>Accounting</option>
+                    <option>Business Administration</option>
+                </select>
+
+                <label>Message</label>
+                <textarea placeholder="Additional information"></textarea>
+
+                <label class="terms">
+                    <input type="checkbox" required>
+                    I agree to the registration terms.
+                </label>
+
+                <button type="submit">Submit Registration</button>
+            </form>
+        </section>
+
+        <section class="table-section">
+            <h2>Registered Students</h2>
+            <p>Sample student records</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S/N</th>
+                            <th>Student Name</th>
+                            <th>Department</th>
+                            <th>Level</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>John Williams</td>
+                            <td>Economics</td>
+                            <td>400L</td>
+                            <td>Active</td>
+                        </tr>
+
+                        <tr>
+                            <td>02</td>
+                            <td>Sarah James</td>
+                            <td>Accounting</td>
+                            <td>300L</td>
+                            <td>Active</td>
+                        </tr>
+
+                        <tr>
+                            <td>03</td>
+                            <td>David Peter</td>
+                            <td>Computer Science</td>
+                            <td>200L</td>
+                            <td>Pending</td>
+                        </tr>
+
+                        <tr>
+                            <td>04</td>
+                            <td>Mary Johnson</td>
+                            <td>Economics</td>
+                            <td>400L</td>
+                            <td>Active</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Formify. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
